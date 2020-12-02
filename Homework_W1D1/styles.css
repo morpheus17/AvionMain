@@ -1,9 +1,12 @@
 <!--
 h1{
+    text-align: center;
     color:slategray;
 }
 h3{
-    color:grey;
+    position: relative;
+    right:0px;
+    color:darkslategrey;
 }
 img{
     width:400px;
@@ -50,6 +53,15 @@ ul{
   #HeaderAssets span {
     font-size: 20px;
     color: white;
+  }
+
+  #explanation{
+    position: absolute;
+    top:150%;
+    left:10px;
+    font-size:17px;
+    color: lightslategray;
+    text-align: center;
   }
 
   img{
