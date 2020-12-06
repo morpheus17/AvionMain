@@ -8,26 +8,21 @@ html, body {
 
 body {
     color:grey;
+    padding:0;
+    height:100%;
+    width:100%;
+    background-image: url("https://cdn.hipwallpaper.com/i/74/6/kjNZJd.jpg"); 
+
+    /* Full height */
+    max-height: 100%; 
+    max-width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-
-.bg {
-  /* The image used */
-  margin:0;
-  padding:0;
-  height:100%;
-  background-image: url("https://cdn.hipwallpaper.com/i/74/6/kjNZJd.jpg");
-
-  /* Full height */
-  max-height: 100%; 
-  max-width: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-}
-
 
 ol,ul {
 	list-style: none;
@@ -47,12 +42,12 @@ a:link{
     color:gray;
 }
 
-a:hover{
-    color:blue;
-}
-
 a:visited{
     color:gray;
+}
+
+a:hover{
+    color:lightgray;
 }
 
 #MainMenu {
@@ -91,11 +86,15 @@ a:visited{
 #main{
     position: relative;
     /* border: 10px solid #4CAF50; */
+    width:70vw
 }
 
 #tribute-head{
-    padding-left: 5%;
+    display:flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    /* padding-left: 5%; */
     width:100%;
     
 }
@@ -108,21 +107,25 @@ a:visited{
 }
 
 #image{
-    height: 400px;
-    width:auto;
+    border-radius: 15px;
+    height:300px;
+    width: auto;
+    max-height: 100%;
+    max-width:100%;
     margin: auto;
 }
 
 #image-caption{
-    font-size: 11px;
+    font-size: 10px;
 }
 
 #tribute-info{
     display:flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-left:5%;
-    padding-right:30%;
+    /* padding-right:30%; */
 }
 
 #tribute-info h4,h5{
